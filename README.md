@@ -1,71 +1,77 @@
-# rem-chakra-intellisense README
+# Chakra Rem-to-Units Helper
 
-This is the README for your extension "rem-chakra-intellisense". After writing up a brief description, we recommend including the following sections.
+Convert `rem` values into Chakra UI spacing units with smart completions in VS Code.
 
-## Features
+## ✨ Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🔄 Instantly convert `rem` values to Chakra spacing units
+- ⚡ Smart inline completions as you type
+- 🧠 Supports decimals like `1.5rem`, `2.25rem`
+- 🧩 Works in JavaScript, TypeScript, HTML, CSS, and React files
+- ✅ Minimal syntax required — just type `rc3`, press `Ctrl+Space`, and select the suggestion
 
-For example if there is an image subfolder under your extension project workspace:
+# Important: Cursor must be at starting line when pressing Ctrl+Space, if you write rc2 the cursor whould be behind the "r".
 
-\!\[feature X\]\(images/feature-x.png\)
+## 💡 Usage
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Just type a value like this:
 
-## Requirements
+- `rc2`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Then trigger completions (e.g. `Ctrl+Space`), and you'll see suggestions like:
 
-## Extension Settings
+> `8 (chakra units, 2rem = 8 chakra size tokens)`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+It will replace the full matched text (`rc2`, `rc3`, etc.) with the equivalent Chakra value (e.g., `8`, `12`).
 
-For example:
+## 🔧 Chakra Calculation Logic
 
-This extension contributes the following settings:
+This extension assumes:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `1rem = 16px`
+- Chakra spacing unit base = `4px`
 
-## Known Issues
+So:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+```
+rem2 → (2 _ 16) / 4 = 8
+rem1.5 → (1.5 _ 16) / 4 = 6
+```
 
-## Release Notes
+## 🛠 Supported Languages
 
-Users appreciate release notes as you update your extension.
+- JavaScript
+- TypeScript
+- JavaScript React (`.jsx`)
+- TypeScript React (`.tsx`)
+- HTML
+- CSS
 
-### 1.0.0
+## 📦 Installation
 
-Initial release of ...
+1. Search for **Chakra Rem-to-Units Helper** in the Extensions tab
+2. Click **Install**
+3. Start typing `remX` or `rcX` in your files
+4. Trigger completions with `Ctrl+Space`
 
-### 1.0.1
+## 🧪 Example
 
-Fixed issue #.
+Before:
 
-### 1.1.0
+```
+padding: rem2;
+```
 
-Added features X, Y, and Z.
+After:
+
+```
+padding: 8;
+```
+
+## 🤝 Contributions
+
+PRs and issues welcome!
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+© 2025 – Chakra Rem-to-Units Helper
