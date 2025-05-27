@@ -10,7 +10,9 @@ Convert `rem` values into Chakra UI spacing units with smart completions in VS C
 - 🧩 Works in JavaScript, TypeScript, HTML, CSS, and React files
 - ✅ Minimal syntax required — just type `rc3`, press `Ctrl+Space`, and select the suggestion
 
-# Important: Cursor must be at starting line when pressing Ctrl+Space, if you write rc2 the cursor whould be behind the "r".
+
+**Cursor must be at starting line when pressing Ctrl+Space, if you write rc2 the cursor whould be behind the "r".**
+
 
 ## 💡 Usage
 
