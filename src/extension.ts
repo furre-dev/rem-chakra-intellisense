@@ -33,6 +33,8 @@ export function activate(context: vscode.ExtensionContext) {
 						completion.detail = `${remValue}rem ≈ ${chakraUnits} chakra units`;
 						completion.insertText = chakraUnits;
 						completion.range = matchRange;
+						completion.sortText = "000";
+						completion.preselect = true;
 
 						return [completion];
 					}
