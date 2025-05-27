@@ -2,7 +2,7 @@
   "name": "chakra-rem-helper",
   "displayName": "Chakra REM Helper",
   "description": "Convert rem units to Chakra UI spacing units directly in code.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/furre-dev/rem-chakra-intellisense",
   "publisher": "furre-dev",
   "engines": {
