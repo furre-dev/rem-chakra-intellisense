@@ -3,6 +3,7 @@
   "displayName": "Chakra REM Helper",
   "description": "Convert rem units to Chakra UI spacing units directly in code.",
   "version": "0.0.2",
+  "license": "MIT",
   "repository": "https://github.com/furre-dev/rem-chakra-intellisense",
   "publisher": "furre-dev",
   "engines": {
@@ -38,14 +39,15 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.6.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
   }
 }
